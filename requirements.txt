@@ -1,0 +1,8 @@
+torch
+transformers
+accelerate
+sentence-transformers
+numpy
+pandas
+rouge-score
+PyPDF2
