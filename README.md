@@ -1,6 +1,6 @@
 # DF-RAG: Query-Aware Diversity for Retrieval-Augmented Generation
 
-This repository contains the code for **DF-RAG**, a training-free Retrieval-Augmented Generation method that balances query relevance and chunk diversity at inference time using geometric MMR (gMMR) and LLM based planner and Evaluator.
+This repository contains the code for **DF-RAG**, a training-free Retrieval-Augmented Generation method that balances query relevance and chunk diversity at inference time using geometric MMR (gMMR) and LLM based Planner and Evaluator.
 
 
 <img src="df-rag.png" >
@@ -14,12 +14,13 @@ This repo currently has a single runnable file:
 - `run_dfrag.py` — end-to-end script for chunking documents, retrieving Top-K and diverse chunks, selecting best λ via Evaluator, generating answers, computing ROUGE-L, F1, and EM, and saving results to CSV.
 
 This code xepects a LongBench-style JSONL files where each line is presented in the format: 
+```bash
 {
   "input": "question text",
   "context": "long document text",
   "answers": ["ground truth answer"]
 }
-
+```
 ## Running DF-RAG
 
 1) Install the requirements.txt file
